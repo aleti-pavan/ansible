@@ -1,0 +1,13 @@
+---
+- hosts: all
+  remote_user: ubuntu
+  tasks:
+       - name: creating files with File Module
+         file:
+            name: "{{ item }}"
+            state: absent 
+         with_items:
+            - file1
+            - file2
+            - file3
+

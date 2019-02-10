@@ -1,0 +1,15 @@
+---
+- hosts: all
+  remote_user: all
+  become: yes
+  tasks:
+      - name: install nginx
+        apt: name=nginx state=present
+        tags: install
+      - name: start nginx
+        service: name=nginx state=started
+        tags: start
+      - name: stop nginx
+        service: name=nginx state=stopped
+        tags: stop
+

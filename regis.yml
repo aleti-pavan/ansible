@@ -1,0 +1,12 @@
+---
+- hosts: all
+  gather_facts: no
+  become: yes 
+  remote_user: ubuntu
+  tasks:
+     - name: use of register variable
+       shell: printenv 
+       register: pavan
+     - name: printing the environment
+       debug: msg={{ pavan }}
+

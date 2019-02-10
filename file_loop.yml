@@ -1,0 +1,11 @@
+---
+- hosts: all
+  remote_user: ubuntu
+  tasks:
+     - name: remove files
+       command: rm {{ item }}
+       with_items:
+         - file1.txt
+         - file2.txt
+         - file3.txt
+
