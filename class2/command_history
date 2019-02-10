@@ -1,0 +1,906 @@
+    1  uname -a 
+    2  lsb_release 
+    3  lsb_release  -a
+    4  sudo apt-get update && sudo apt-get install software-properties-common
+    5  clear
+    6  sudo apt-add-repository ppa:ansible/ansible
+    7  sudo apt-get update && sudo apt-get install ansible
+    8  sudo apt-get update && sudo apt-get install ansible -y
+    9  clear
+   10  more /etc/ansible/hosts 
+   11  cd /etc/ansible/
+   12  ls
+   13  more ansible.cfg 
+   14  clear
+   15  ping 18.130.140.72
+   16  ping root@18.130.140.72
+   17  ping 18.130.140.72
+   18  vi hosts 
+   19  ping 18.130.140.72
+   20  ansible -m ping all
+   21  vi hosts 
+   22  pwd
+   23  cd /home/
+   24  ls
+   25  cd ubuntu/
+   26  ls
+   27  pwd
+   28  ls
+   29  pwd
+   30  ansible all -m ping -a "pwd" --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   31  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   32  cat /etc/ansible/hosts 
+   33  python
+   34  vi /etc/ansible/hosts 
+   35  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   36  ansible -m ping --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   37  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   38  vi /etc/ansible/hosts 
+   39  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   40  vi /etc/ansible/hosts 
+   41  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   42  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu -vvv
+   43  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   44  ansible ping
+   45  vi /etc/ansible/hosts 
+   46  ansible ping
+   47  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   48  hisotry
+   49  history
+   50  vi /etc/ansible/hosts 
+   51  ansible 
+   52  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu -v
+   53  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu -vv
+   54  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu -vvv
+   55  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   56  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu -vvv
+   57  su
+   58  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu -vvv
+   59  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu -v
+   60  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu -vv
+   61  ansible -m ping all
+   62  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu -vv
+   63  ansible -m ping all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   64  ansible -m ping localhost --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   65  ansible -m shell -a 'free -m'
+   66  ansible -m shell -a 'free -m' --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   67  ansible -m shell -a 'free -m' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   68  ansible -m shell -a 'free -m' --private-key=/home/ubuntu/aleti.pem -u ubuntu -f 1
+   69  ansible -m shell -a 'free -m' --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   70  ansible -m shell -a 'free -m' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   71  ansible -m shell -a 'echo $TERM' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   72  ansible -m shell -a 'uname -a' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   73  ansible -m command -a 'uname -a' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   74  ansible -m command -a 'ls -a' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   75  ansible -m command -a 'ls -a|grep -i "aleti*" ; pwd' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   76  ansible -m shell -a 'ls -a|grep -i "aleti*" ; pwd' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   77  ansible -m shell all -a 'ls -a|grep -i "aleti*" ; pwd' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   78  ansible -m shell -a 'ls -a|grep -i "aleti*" ; pwd' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   79  ansible -m shell -a 'ls -a|grep -i "aleti*" ; pwd' all --private-key=/home/ubuntu/aleti.pem -u ubuntu -f 1
+   80  cat /etc/ansible/ansible.cfg | grep "*fork*"
+   81  cat /etc/ansible/ansible.cfg 
+   82  vi /etc/ansible/ansible.cfg 
+   83  grep -rnw /etc/ansible/ansible.cfg -e '*fork*'
+   84  grep -rnw /etc/ansible/ansible.cfg -e 'fork'
+   85  cat /etc/ansible/ansible.cfg | grep -i "*fork*"
+   86  grep -inr "*fork*" /etc/ansible/ansible.cfg 
+   87  more /etc/ansible/ansible.cfg 
+   88  ansible -m shell all -a 'ls -a|grep -i "aleti*" ; pwd' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   89  ansible -m command -a 'ls -a' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   90  ansible -m command -a 'ls -a' all --private-key=/home/ubuntu/aleti.pem -u ubuntu f 1
+   91  ansible -m command -a 'ls -a' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+   92  ansible -m command -a 'ls -a' all --private-key=/home/ubuntu/aleti.pem -u ubuntu -f 1
+   93  ansible -m command -a 'ls -a' all --private-key=/home/ubuntu/aleti.pem -u ubuntu -f 0
+   94  history
+   95  ansible -m command -a 'ls -a' all --private-key=/home/ubuntu/aleti.pem -u ubuntu -f 1
+   96  ansible -m command -a 'uname -a' all --private-key=/home/ubuntu/aleti.pem -u ubuntu -f 1
+   97  ansible -m command -a 'lsb_release -a' all --private-key=/home/ubuntu/aleti.pem -u ubuntu -f 1
+   98  ansible -m command -a 'lsb_release -a' all --private-key=/home/ubuntu/aleti.pem -u ubuntu -f 0
+   99  vi /etc/ansible/ansible.cfg 
+  100  ansible -m command -a 'cat /etc/passwd' all --private-key=/home/ubuntu/aleti.pem -u ubuntu -f 0
+  101  ansible -m command -a 'cat /etc/passwd' all --private-key=/home/ubuntu/aleti.pem -u ubuntu -f 1
+  102  ansible -m command -a 'cat /etc/passwd' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+  103  ansible -m user -a 'name=pavan state=present' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+  104  ansible -m user -a 'name=pavan state=present' all --private-key=/home/ubuntu/aleti.pem -u ubuntu --become-user root
+  105  ansible
+  106  ansible -m user -a 'name=pavan state=present' all --private-key=/home/ubuntu/aleti.pem -u ubuntu --become
+  107  ansible -m user -a 'name=pavan state=absent' all --private-key=/home/ubuntu/aleti.pem -u ubuntu --become
+  108  ansible -m apt -a 'name=httpd enabled=true state=present' all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+  109  ansible -m apt -a 'name=httpd enabled=true state=present' all --private-key=/home/ubuntu/aleti.pem -u ubuntu --become
+  110  ansible -m apt -a 'name=httpd state=present' all --private-key=/home/ubuntu/aleti.pem -u ubuntu --become
+  111  ansible -m command -a "apt-get update" all --private-key=/home/ubuntu/aleti.pem -u ubuntu
+  112  ansible -m command -a "apt-get update" all --private-key=/home/ubuntu/aleti.pem -u ubuntu --become
+  113  ansible -m apt -a 'name=httpd state=present' all --private-key=/home/ubuntu/aleti.pem -u ubuntu --become
+  114  ansible -m apt -a 'name=apache2 state=present' all --private-key=/home/ubuntu/aleti.pem -u ubuntu --become
+  115  ansible -m apt -a 'name=apache2 state=absent' all --private-key=/home/ubuntu/aleti.pem -u ubuntu --become
+  116  ls
+  117  vi test.yml
+  118  mv test.yml nginxx.yml
+  119  apt-get update -y
+  120  ansible-playbook nginxx.yml 
+  121  vi nginxx.yml 
+  122  ansible-playbook nginxx.yml 
+  123  more nginxx.yml 
+  124  ansible-playbook nginxx.yml --check
+  125  vi nginxx.yml 
+  126  ansible-playbook nginxx.yml --check
+  127  vi nginxx.yml 
+  128  ansible-playbook nginxx.yml --check
+  129  vi nginxx.yml 
+  130  ansible-playbook nginxx.yml --check
+  131  ansible-playbook 
+  132  ls
+  133  ansible-playbook nginxx.yml --private-key=aleti.pem
+  134  vi nginxx.yml 
+  135  ansible-playbook nginxx.yml --private-key=aleti.pem
+  136  vi nginxx.yml 
+  137  cat /etc/ansible/hosts 
+  138  ansible-playbook nginxx.yml --private-key=aleti.pem
+  139  vi nginxx.yml 
+  140  ansible-playbook nginxx.yml --private-key=aleti.pem
+  141  vi nginxx.
+  142  vi nginxx.yml 
+  143  cat nginxx.yml 
+  144  vi users.yml
+  145  ansible-playbook users.yml --check
+  146  ansible-playbook users.yml --private-key=aleti.pem
+  147  vi users.yml 
+  148  ansible-playbook users.yml --private-key=aleti.pem --extra-vars "password=Pavan@123"
+  149  vi users.yml 
+  150  ansible-playbook users.yml --private-key=aleti.pem --extra-vars "password=Pavan@123"
+  151  vi users.yml 
+  152  ansible-playbook users.yml --private-key=aleti.pem --extra-vars "password=Pavan@123"
+  153  ansible-playbook users.yml --private-key=aleti.pem --extra-vars "password='Pavan@123'"
+  154  ansible-playbook users.yml --private-key=aleti.pem --extra-vars password=Pavan@123
+  155  vi users.yml 
+  156  ansible-playbook users.yml --private-key=aleti.pem --extra-vars password=Pavan@123
+  157  vi users.yml 
+  158  ansible-playbook users.yml --private-key=aleti.pem --extra-vars password=Pavan@123
+  159  vi users.yml 
+  160  ansible-playbook users.yml --private-key=aleti.pem --extra-vars password=Pavan@123
+  161  vi users.yml 
+  162  ansible-playbook users.yml --private-key=aleti.pem --extra-vars password=Pavan@123
+  163  vi users.yml 
+  164  ansible-playbook users.yml --private-key=aleti.pem --extra-vars password=Pavan@123
+  165  vi users.yml 
+  166  ansible-playbook users.yml --private-key=aleti.pem 
+  167  vi users.yml 
+  168  ansible-playbook users.yml --private-key=aleti.pem 
+  169  ansible all -m setup
+  170  ansible all -m setup --private-key=aleti.pem
+  171  ansible all -m setup --private-key=/home/ubuntu/aleti.pem -u ubuntu --become
+  172  vi regis.yml
+  173  ansible-playbook regis.yml --check
+  174  ansible-playbook regis.yml --check --private-key=aleti.pem 
+  175  vi regis.yml
+  176  ansible-playbook regis.yml --check --private-key=aleti.pem 
+  177  vi regis.yml 
+  178  ansible-playbook regis.yml --check --private-key=aleti.pem 
+  179  ansible-playbook regis.yml --check --private-key=aleti.pem -v
+  180  ansible-playbook regis.yml --check --private-key=aleti.pem -vv
+  181  ls
+  182  more regis.retry 
+  183  cat nginxx.retry 
+  184  history
+  185  ansible-playbook nginxx.yml --check
+  186  ansible-playbook nginxx.yml --check --private-key=aleti.pem 
+  187  echo $USER
+  188  printenv
+  189  clear
+  190  ls
+  191  vi regis.yml 
+  192  ansible-playbook regis.yml --private-key=aleti.pem 
+  193  vi regis.yml 
+  194  ansible-playbook regis.yml --private-key=aleti.pem 
+  195  vi regis.yml 
+  196  ansible-playbook regis.yml --private-key=aleti.pem 
+  197  vi regis.yml 
+  198  ansible-playbook regis.yml --private-key=aleti.pem 
+  199  vi regis.yml 
+  200  ansible-playbook regis.yml --private-key=aleti.pem 
+  201  clear
+  202  ansible-playbook regis.yml --private-key=aleti.pem 
+  203  clear
+  204  vi regis.yml 
+  205  ansible-playbook regis.yml --private-key=aleti.pem 
+  206  cat nginxx.yml 
+  207  vi regis.yml 
+  208  ansible-playbook regis.yml --private-key=aleti.pem 
+  209  cat regis.yml 
+  210  ls
+  211  clear
+  212  vi inventory
+  213  ansible -i inventory -m setup --private-key=aleti.pem -u ubuntu
+  214  ansible -m setup --private-key=aleti.pem -u ubuntu
+  215  ansible -i inventory all -m setup --private-key=aleti.pem -u ubuntu
+  216  vi inventory 
+  217  ansible -i inventory all -m setup --private-key=aleti.pem -u ubuntu
+  218  ansible -i inventory all -m setup -a "filter=ansible_user*" --private-key=aleti.pem -u ubuntu
+  219  ansible -i inventory all -m setup -a "filter=ansible_dist*" --private-key=aleti.pem -u ubuntu
+  220  ansible -i inventory all -m setup -a "filter=ansible_os_family" --private-key=aleti.pem -u ubuntu
+  221  cat nginxx.yml 
+  222  cp nginxx.yml condition1.yml
+  223  vi condition1.yml 
+  224  ansible-playbook -i inventory condition1.yml --private-key=aleti.pem -u ubuntu
+  225  vi condition1.yml 
+  226  ansible-playbook -i inventory condition1.yml --private-key=aleti.pem -u ubuntu
+  227  ansible-playbook -i inventory condition1.yml --extra-vars="os=Debian" --private-key=aleti.pem -u ubuntu
+  228  vi condition1.
+  229  vi condition1.yml 
+  230  ansible-playbook -i inventory condition1.yml --extra-vars="os_var=Debian" --private-key=aleti.pem -u ubuntu
+  231  vi condition1.yml 
+  232  ansible-playbook -i inventory condition1.yml --extra-vars="os_var=Debian" --private-key=aleti.pem -u ubuntu
+  233  vi condition1.yml 
+  234  ansible-playbook -i inventory condition1.yml --extra-vars="os_var=Debian" --private-key=aleti.pem -u ubuntu
+  235  vi condition1.
+  236  vi condition1.yml 
+  237  ansible-playbook -i inventory condition1.yml --extra-vars="os_var=Debian" --private-key=aleti.pem -u ubuntu
+  238  vi condition1.yml 
+  239  ansible-playbook -i inventory condition1.yml --extra-vars "my_os=Debian" --private-key=aleti.pem -u ubuntu
+  240  ansible-playbook -i inventory condition1.yml --extra-vars "my_os='Debian'" --private-key=aleti.pem -u ubuntu
+  241  ansible-playbook -i inventory condition1.yml --extra-vars "my_os=Debian" --private-key=aleti.pem -u ubuntu
+  242  ansible-playbook -i inventory condition1.yml -e my_os=Debian
+  243  vi condition1.yml 
+  244  ansible-playbook -i inventory condition1.yml -e my_os=Debian
+  245  ansible-playbook -i inventory condition1.yml -e my_os=Debian--private-key=aleti.pem -u ubuntu
+  246  ansible-playbook -i inventory condition1.yml --extra-vars "my_os='Debian'" --private-key=aleti.pem -u ubuntu
+  247  vi condition1.yml 
+  248  ansible-playbook -i inventory condition1.yml -e my_os=Debian
+  249  ansible-playbook -i inventory condition1.yml -e my_os=Debian --private-key=aleti.pem -u ubuntu
+  250  ansible-playbook -i inventory condition1.yml --extra-vars "my_os=Debian" --private-key=aleti.pem -u ubuntu
+  251  ansible-playbook -i inventory condition1.yml --private-key=aleti.pem -u ubuntu
+  252  clear
+  253  ansible -m shell -a "uname -a" --private-key=aleti.pem -u ubuntu
+  254  ansible all -m shell -a "uname -a" --private-key=aleti.pem -u ubuntu
+  255  ansible all -m shell -a "free -m" --private-key=aleti.pem -u ubuntu
+  256  ansible all -m command -a "free -m" --private-key=aleti.pem -u ubuntu
+  257  ansible all -m command -a "free -m| grep -i "swap" " --private-key=aleti.pem -u ubuntu
+  258  ansible all -m command -a "free -m| grep -i 'swap' " --private-key=aleti.pem -u ubuntu
+  259  ansible all -m shell -a "free -m| grep -i 'swap' " --private-key=aleti.pem -u ubuntu
+  260  ansible all -m command -a "uname -a" --private-key=aleti.pem -u ubuntu
+  261  ansible all -m shell -a "uname -a" --private-key=aleti.pem -u ubuntu
+  262  ansible all -m shell -a "uname -a" --private-key=aleti.pem -u ubuntu -i inventory 
+  263  cat inventory 
+  264  vi inventory 
+  265  ansible all -m shell -a "uname -a" --private-key=aleti.pem -u ubuntu -i inventory 
+  266  more /etc/ansible/ansible.cfg 
+  267  ansible all -m shell -a "uname -a" --private-key=aleti.pem -u ubuntu -i inventory -f 1
+  268  ansible all -m shell -a "uname -a" --private-key=aleti.pem -u ubuntu -i inventory -f 10
+  269  ansible all -m shell -a "uname -a" --private-key=aleti.pem -u ubuntu -i inventory -f 1
+  270  cat /etc/passwd
+  271  cat /etc/passwd | grep "pavan"
+  272  cat /etc/passwd | grep "vijaya"
+  273  clear
+  274  ansible all -m user -a "name=pavan state=present" --private-key=aleti.pem -u ubuntu -i inventory -f 1
+  275  ansible all -m user -a "name=pavan state=present" --private-key=aleti.pem -u ubuntu -i inventory -f 1 --become
+  276  cat /etc/passwd | grep "pavan"
+  277  ansible all -m user -a "name=vijaya state=present" --private-key=aleti.pem -u ubuntu -i inventory -f 1 --become
+  278  ansible all -m user -a "name=vijaya state=prsent" --private-key=aleti.pem -u ubuntu -i inventory -f 1 --become
+  279  ansible all -m user -a "name=vijaya state=absent" --private-key=aleti.pem -u ubuntu -i inventory -f 1 --become
+  280  ansible all -m user -a "name=pavan state=absent" --private-key=aleti.pem -u ubuntu -i inventory -f 1 --become
+  281  ansible -v
+  282  ansible -V
+  283  ansible --version
+  284  clear
+  285  vi inventory 
+  286  ansible all -m user -a "name=pavan state=present" --private-key=aleti.pem -i inventory 
+  287  ansible all -m user -a "name=pavan state=present" --private-key=aleti.pem -i inventory --become
+  288  vi inventory 
+  289  ansible all -m user -a "name=pavan state=present" --private-key=aleti.pem -i inventory --become
+  290  vi inventory 
+  291  ansible all -m user -a "name=pavan state=present" -i inventory --become
+  292  ansible all -m user -a "name=pavan state=present" -i inventory --become --private-key=aleti.pem 
+  293  vi inventory 
+  294  ansible all -m user -a "name=pavan state=present" -i inventory --become --private-key=aleti.pem 
+  295  ansible all -m user -a "name=pavan state=present" -i inventory --become
+  296  vi inventory 
+  297  ansible all -m user -a "name=pavan state=present" -i inventory --become
+  298  vi inventory 
+  299  ansible all -m user -a "name=pavan state=present" -i inventory --become
+  300  ansible all -m user -a "name=pavan state=present" -i inventory --become --private-key=aleti.pem 
+  301  ansible all -m apt "name=apache2 state=latest" -i inventory --private-key=aleti.pem 
+  302  ansible all -m apt "name=apache2 state=latest" -i inventory --private-key=aleti.pem -u ubuntu
+  303  ansible all -m apt -a "name=apache2 state=latest" -i inventory --private-key=aleti.pem -u ubuntu
+  304  ansible all -m apt -a "name=apache2 state=latest" -i inventory --private-key=aleti.pem -u ubuntu --become
+  305  ansible all -m apt -a "name=apache2 state=absent" -i inventory --private-key=aleti.pem -u ubuntu --become
+  306  ansible all -m apt -a "name=apache2 state=absent" -i inventory --private-key=aleti.pem -u ubuntu --become -v
+  307  ansible all -m apt -a "name=apache2 state=absent" -i inventory --private-key=aleti.pem -u ubuntu --become -vv
+  308  ansible all -m apt -a "name=apache2 state=absent" -i inventory --private-key=aleti.pem -u ubuntu --become -vvv
+  309  ansible all -m apt -a "name=apache2 state=absent" -i inventory --private-key=aleti.pem -u ubuntu --become -vvvv
+  310  ansible all -m apt -a "name=apache2 state=absent" -i inventory --private-key=aleti.pem -u ubuntu --become -vvvvv
+  311  cler
+  312  clear
+  313  setup
+  314  ansible all -m setup -i inventory
+  315  ansible all -m setup -i inventory --private-key=aleti.pem 
+  316  ansible all -m setup -a "filter=ansible*" -i inventory --private-key=aleti.pem 
+  317  ansible all -m setup -a "filter=ansible_dist*" -i inventory --private-key=aleti.pem 
+  318  uname -a
+  319  lsb_release 
+  320  lsb_release -a
+  321  ansible all -m setup -a "filter=ansible_user*" -i inventory --private-key=aleti.pem 
+  322  ansible all -m setup -a "filter=ansible_os_*" -i inventory --private-key=aleti.pem 
+  323  clear
+  324  ls
+  325  cat nginxx.retry 
+  326  clear
+  327  ls
+  328  vi nginx2.yml
+  329  ansible-playbook nginx2.yml --private-key=aleti.pem
+  330  vi nginx2.yml 
+  331  ansible-playbook nginx2.yml --private-key=aleti.pem
+  332  vi nginx2.yml 
+  333  ansible-playbook nginx2.yml --private-key=aleti.pem
+  334  vi nginx2.yml 
+  335  ansible-playbook nginx2.yml --private-key=aleti.pem
+  336  vi nginx2.yml 
+  337  ansible-playbook nginx2.yml --private-key=aleti.pem
+  338  ls
+  339  clear
+  340  ansible-playbook nginx2.yml --private-key=aleti.pem -i inventory 
+  341  vi inventory 
+  342  cat inventory 
+  343  vi nginx2.yml 
+  344  service nginx status
+  345  ansible all -m apt -a "name=nginx state=absent" --private-key=aleti.pem  -u ubuntu
+  346  ansible all -m apt -a "name=nginx state=absent" --private-key=aleti.pem  -u ubuntu --become
+  347  ansible all -m apt -a "name=nginx state=absent update_cache=yes" --private-key=aleti.pem  -u ubuntu --become
+  348  nginx
+  349  service nginx restart
+  350  service nginx statu
+  351  service nginx status
+  352  clear
+  353  service apache2 status
+  354  clear
+  355  vi nginx2.yml 
+  356  ansible-playbook -i inventory nginx2.yml --private-key=aleti.pem 
+  357  cat inventory 
+  358  cat nginx2.yml 
+  359  service apache2 status
+  360  vi nginx2.yml 
+  361  clear
+  362  mv nginx2.yml apache2.yml
+  363  clear
+  364  vi apache2.yml 
+  365  ansible-playbook apache2.yml --private-key=aleti.pem -i inventory 
+  366  ansible-playbook apache2.yml --private-key=aleti.pem -i inventory
+  367  vi apache2.yml 
+  368  ansible-playbook apache2.yml --private-key=aleti.pem -i inventory
+  369  vi apache2.yml 
+  370  ansible-playbook apache2.yml --private-key=aleti.pem -i inventory
+  371  ansible all -m apt -a "state=absent name=apache2 enabled=no" --private-key=aleti.pem -u ubuntu --become
+  372  ansible all -m apt -a "state=absent name=apache2" --private-key=aleti.pem -u ubuntu --become
+  373  clear
+  374  ansible-playbook apache2.yml --private-key=aleti.pem -i inventory
+  375  clear
+  376  cat apache2.yml 
+  377  clear
+  378  vi 2nginx.yml
+  379  ansible-playbook 2nginx.yml --private-key=aleti.pem -i inventory 
+  380  vi 2nginx.yml 
+  381  ansible-playbook 2nginx.yml --private-key=aleti.pem -i inventory 
+  382  clear
+  383  vi 2nginx.yml 
+  384  ansible-playbook 2nginx.yml --private-key=aleti.pem -i inventory 
+  385  vi /etc/ansible/ansible.cfg 
+  386  ansible-playbook 2nginx.yml --private-key=aleti.pem -i inventory 
+  387  vi /etc/ansible/ansible.cfg 
+  388  ansible-playbook 2nginx.yml --private-key=aleti.pem -i inventory 
+  389  vi /etc/ansible/ansible.cfg 
+  390  clear
+  391  cat /etc/ansible/ansible.cfg | grep -i "deprication"
+  392  ansible-playbook 2nginx.yml --private-key=aleti.pem -i inventory 
+  393  cat /etc/ansible/ansible.cfg | grep -i "deprication"
+  394  vi /etc/ansible/ansible.cfg 
+  395  ansible-playbook 2nginx.yml --private-key=aleti.pem -i inventory 
+  396  vi 2nginx.yml 
+  397  ansible-playbook 2nginx.yml --private-key=aleti.pem -i inventory 
+  398  clear
+  399  ls
+  400  vi inventory 
+  401  cat regis.yml 
+  402  ansible-playbook regis.yml -i inventory --private-key=aleti.pem --become
+  403  ansible-playbook regis.yml -i inventory --private-key=aleti.pem --become -v
+  404  vi regis.yml 
+  405  ansible-playbook regis.yml -i inventory --private-key=aleti.pem -v
+  406  cat regis.yml 
+  407  vi ls_regis.yml
+  408  ansible-playbook ls_regis.yml -i inventory --private-key=aleti.pem 
+  409  vi ls_regis.yml
+  410  ansible-playbook ls_regis.yml -i inventory --private-key=aleti.pem 
+  411  vi ls_regis.yml 
+  412  ansible-playbook ls_regis.yml -i inventory --private-key=aleti.pem 
+  413  vi ls_regis.yml 
+  414  ansible-playbook ls_regis.yml -i inventory --private-key=aleti.pem 
+  415  vi ls_regis.yml 
+  416  ansible-playbook ls_regis.yml -i inventory --private-key=aleti.pem 
+  417  vi ls_regis.yml 
+  418  ansible-playbook ls_regis.yml -i inventory --private-key=aleti.pem 
+  419  vi ls_regis.yml 
+  420  ansible-playbook ls_regis.yml -i inventory --private-key=aleti.pem 
+  421  vi ls_regis.yml 
+  422  ansible-playbook ls_regis.yml -i inventory --private-key=aleti.pem 
+  423  vi ls_regis.yml 
+  424  ansible-playbook ls_regis.yml -i inventory --private-key=aleti.pem 
+  425  vi loop1.yml
+  426  ansible-playbook loop1.yml -i inventory --private-key=aleti.pem 
+  427  vi loop1.yml 
+  428  ansible-playbook loop1.yml -i inventory --private-key=aleti.pem 
+  429  vi loop1.yml 
+  430  ansible-playbook loop1.yml -i inventory --private-key=aleti.pem 
+  431  vi loop1.yml 
+  432  ansible-playbook loop1.yml -i inventory --private-key=aleti.pem 
+  433  vi loop1.yml 
+  434  ansible-vault 
+  435  ls
+  436  vi loop2.yml
+  437  ansible-playbook -i inventory loop2.yml --private-key=aleti.pem 
+  438  ls
+  439  vi loop2.yml 
+  440  ansible-doc -l
+  441  ansible-doc -l | wc -l
+  442  cat /etc/motd
+  443  cat /tmp/motd
+  444  history
+  445  ls
+  446  cat ls_regis.
+  447  cat ls_regis.yml 
+  448  cat nginxx.yml 
+  449  ansible-playbook ls_regis.yml --check
+  450  ansible-playbook ls_regis.yml --check -u ubuntu
+  451  ansible-playbook ls_regis.yml --check -u ubuntu --private-key=aleti.pem 
+  452  ansible-playbook nginxx.yml --check -u ubuntu --private-key=aleti.pem 
+  453  ansible-playbook nginxx.yml --check -u ubuntu --private-key=aleti.pem -i inventory 
+  454  vi tags1.yml
+  455  ansible-playbook tags1.yml --check --private-key=aleti.pem 
+  456  ansible-playbook tags1.yml --check --private-key=aleti.pem -i inventory 
+  457  ansible-playbook tags1.yml --private-key=aleti.pem --tags stop
+  458  ansible-playbook tags1.yml --private-key=aleti.pem --tags stop -i inventory 
+  459  ansible-playbook tags1.yml --private-key=aleti.pem --tags start -i inventory 
+  460  cat inventory 
+  461  vi /etc/ansible/hosts 
+  462  ansible-playbook tags1.yml --private-key=aleti.pem --tags stop -i inventory 
+  463  ansible-playbook tags1.yml --private-key=aleti.pem --tags start
+  464  ansible-playbook tags1.yml --private-key=aleti.pem --tags stop
+  465  clear
+  466  vi tags1.yml 
+  467  ls
+  468  cat loop1.yml 
+  469  cat loop2.yml 
+  470  history
+  471  ansible-playbook tags1.yml --private-key=aleti.pem --skip-tags install
+  472  ansible-playbook tags1.yml --private-key=aleti.pem --skip-tags install,stop
+  473  ansible-playbook tags1.yml --private-key=aleti.pem
+  474  ansible-playbook tags1.yml --private-key=aleti.pem --syntax-check
+  475  ansible-vault 
+  476  ansible-vault -h
+  477  ansible-vault create
+  478  ansible-vault create vault.txt
+  479  cat vault.txt 
+  480  ansible-vault decrypt valut.txt
+  481  ls
+  482  ansible-vault decrypt vault.txt 
+  483  cat vault.txt 
+  484  ansible-vault encrypt vault.txt 
+  485  cat vault.txt 
+  486  ansible-vault rekey vault.txt 
+  487  ansible-vault edit vault
+  488  ansible-vault edit vault.txt 
+  489  ansible-vault rekey vault.txt 
+  490  ansible-vault edit vault.txt 
+  491  rm vault.txt 
+  492  ls
+  493  clear
+  494  cat ls_regis.yml 
+  495  ansible-playbook ls_regis.yml --private-key=aleti.pem -u ubuntu
+  496  cat ls_regis.yml 
+  497  ansible-vault create 1valut.yml
+  498  ls
+  499  ansible-vault create 1valut.yml
+  500  ansible-vault create 1vault.yml
+  501  cat 1vault.yml 
+  502  ansible-vault edit 1vault.yml 
+  503  ansible-vault decrypt 1vault.yml 
+  504  cat 1vault.yml 
+  505  ansible-vault encrypt 1vault.yml 
+  506  cat 1vault.yml 
+  507  ansible-vault rekey 1vault.yml 
+  508  ansible-vault view 1vault.yml 
+  509  ansible-playbook 1vault.yml --private-key=aleti.pem -u ubuntu --vault-ask-pass=pavan1234
+  510  ansible-playbook 1vault.yml --private-key=aleti.pem -u ubuntu --ask-vault-pass=pavan1234
+  511  ansible-playbook 1vault.yml --private-key=aleti.pem -u ubuntu --ask-vault-pass
+  512  mv ls_regis.yml 1vault.yml 
+  513  cp 1vault.yml ls_regis.yml
+  514  cp ls_regis.yml 1vault.yml 
+  515  cat 1vault.yml 
+  516  ansible-playbook 1vault.yml --private-key=aleti.pem --ask-vault-pass
+  517  cat /etc/ansible/hosts 
+  518  cat inventory 
+  519  ansible-playbook 1vault.yml --private-key=aleti.pem --ask-vault-pass -i inventory 
+  520  ansible-vault
+  521  cat pavan1234
+  522  echo pavan1234
+  523  echo pavan > cat file1.txt
+  524  cat file1.txt
+  525  ls
+  526  echo "pavan1234" > vault_pass_file
+  527  ls vault_pass_file 
+  528  echo "pavan1234" > vault_pass_file
+  529  cat vault_pass_file 
+  530  echo "pavan1234" > vault_pass_file
+  531  cat vault_pass_file 
+  532  echo "pavan1234" >> vault_pass_file
+  533  cat vault_pass_file 
+  534  echo "pavan1234" > vault_pass_file
+  535  cat vault_pass_file 
+  536  ansible-vault 1vault.yml --vault-password-file=vault_pass_file --private-key=aleti.pem -i inventory 
+  537  ansible-playbook 1vault.yml --vault-password-file=vault_pass_file --private-key=aleti.pem -i inventory 
+  538  echo "pavan1234" > vault_pass_file
+  539  cat vault_pass_file 
+  540  ansible-playbook 1vault.yml --vault-password-file=vault_pass_file --private-key=aleti.pem -i inventory 
+  541  ansible -version
+  542  ansible --version
+  543  clear
+  544  ansible-playbook 1vault.yml --vault-id vault_pass_file --private-key=aleti.pem -i inventory 
+  545  ansible-playbook 1vault.yml --vault-id ./vault_pass_file --private-key=aleti.pem -i inventory 
+  546  ansible-playbook 1vault.yml --vault-id @promt --private-key=aleti.pem -i inventory 
+  547  ansible-playbook 1vault.yml --vault-id @prompt --private-key=aleti.pem -i inventory 
+  548  ansible-vault view 1vault.yml 
+  549  cat 1vault.yml 
+  550  ansible-vault encrypt 1vault.yml --vault-password-file=vault_pass_file 
+  551  ansible-vault decrypt --vault-id ./vault_pass_file 1vault.yml 
+  552  ansible view 1vault.yml --vault-id @prompt
+  553  ansible view --vault-id @prompt 1vault.yml 
+  554  ansible edit --vault-id @prompt 1vault.yml 
+  555  ansible-vault view 1vault.yml --vault-id @prompt
+  556  ansible-vault encrypt 1vault.yml --vault-password-file=vault_pass_file 
+  557  ansible-vault view 1vault.yml --vault-id @prompt
+  558  ansible-vault decrypt --vault-id ./vault_pass_file 1vault.yml 
+  559  ls
+  560  apt-get update -y
+  561  git
+  562  elinks
+  563  ls
+  564  cat cat
+  565  rm cat
+  566  ls
+  567  git init
+  568  ls
+  569  vi .gitignore
+  570  git remote
+  571  git clone https://github.com/aleti-pavan/ansible
+  572  ls
+  573  ls -l
+  574  git remote add ansible https://github.com/aleti-pavan/ansible
+  575  git add .
+  576  git status
+  577  git log
+  578  git commit -m "pushing ansible files"
+  579  git push ansible master
+  580  git pull ansible master
+  581  ls
+  582  git push ansible master
+  583  vi .gitignore 
+  584  git push ansible master
+  585  ls
+  586  vi /etc/ansible/hosts 
+  587  vi inventory 
+  588  mkdir roles
+  589  ll
+  590  ls
+  591  cd roles/
+  592  ls
+  593  service status nginx
+  594  service nginx status
+  595  cd ..
+  596  ls
+  597  clear
+  598  ls
+  599  vi nginxx.yml 
+  600  ansible-playbook nginxx.yml --private-key=aleti.pem 
+  601  service nginx status
+  602  vi nginxx.yml 
+  603  service nginx status
+  604  ls
+  605  vi 2nginx.yml 
+  606  ansible-playbook 2nginx.yml --private-key=aleti.pem 
+  607  vi 2nginx.yml 
+  608  ansible-playbook 2nginx.yml --private-key=aleti.pem 
+  609  service nginx status
+  610  service apache2 status
+  611  ls
+  612  cat apache2.yml 
+  613  ansible -i inventory all -m apt -a "pkg=nginx,state=absent" --private-key=aleti.pem 
+  614  ansible -i inventory all -m apt -a "name=nginx,state=absent" --private-key=aleti.pem 
+  615  ansible -i inventory all -m apt -a "name=nginx ,state=absent" --private-key=aleti.pem 
+  616  ansible -i inventory all -m apt -a "pkg=nginx ,state=absent" --private-key=aleti.pem 
+  617  history
+  618  ansible -i inventory all -m apt -a "pkg=nginx ,state=absent" --private-key=aleti.pem -u ubuntu --become
+  619  ansible all -m apt -a "pkg=nginx ,state=absent" --private-key=aleti.pem -u ubuntu --become
+  620  ansible -m apt -a 'name=nginx state=absent' all --private-key=/home/ubuntu/aleti.pem -u ubuntu --become
+  621  ansible -m apt -a 'name=nginx state=absent' all --private-key=/home/ubuntu/aleti.pem -u ubuntu --become -v
+  622  ansible -m apt -a 'name=nginx state=absent' all --private-key=/home/ubuntu/aleti.pem -u ubuntu --become -vv
+  623  service nginx status
+  624  ansible -m service -a "name=nginx state=stopped" all -i inventory --private-key=aleti.pem -u ubuntu
+  625  ansible -m service -a "name=nginx state=stopped" all -i inventory --private-key=aleti.pem -u ubuntu --become
+  626  service nginx status
+  627  clear
+  628  cd roles/
+  629  ls
+  630  clear
+  631  ansible-galaxy init zabbix --offline
+  632  ls
+  633  cd zabbix/
+  634  ls
+  635  tree
+  636  apt-get install tree -y
+  637  clear
+  638  tree
+  639  cd ..
+  640  ls
+  641  cd zabbix/
+  642  cat README.md 
+  643  ansible-galaxy delete zabbix
+  644  cd ..
+  645  ansible-galaxy delete zabbix
+  646  ansible-galaxy
+  647  ansible-galaxy --help
+  648  ansible-galaxy remove --help
+  649  ansible-galaxy remove zabbix
+  650  ls
+  651  rm -r zabbix/
+  652  ls
+  653  clear
+  654  ansible-galaxy init zabbix
+  655  ls
+  656  tree zabbix/
+  657  ls
+  658  cd zabbix/
+  659  ls
+  660  cd tasks/
+  661  ls
+  662  cat main.yml 
+  663  vi main.yml 
+  664  clear
+  665  touch install.yml configure.yml start.yml
+  666  ls
+  667  vi install.yml 
+  668  vi configure.yml 
+  669  rm configure.yml 
+  670  ls
+  671  vi main.yml 
+  672  vi start.yml 
+  673  cd ..
+  674  cd meta/
+  675  ls
+  676  vi main.yml 
+  677  ansible-galaxy 
+  678  ansible-galaxy install zabbix
+  679  ls
+  680  cd ..
+  681  ls
+  682  cd ..
+  683  ls
+  684  cd /etc/ansible/roles/
+  685  ls
+  686  cd --
+  687  pwd
+  688  cd ~
+  689  ls
+  690  cd -
+  691  cd /home/
+  692  ls
+  693  cd pavan/
+  694  ls
+  695  cd p
+  696  cd pav
+  697  ls
+  698  clear
+  699  ls
+  700  cd -
+  701  ls
+  702  cd -
+  703  ls
+  704  cd ../ubuntu/
+  705  ls
+  706  cat inventory 
+  707  vi inventory 
+  708  cat /etc/passwd
+  709  clear
+  710  ls
+  711  cat users.yml 
+  712  vi 2user.yml
+  713  ansible-playbook 2user.yml --syntax-check
+  714  vi 2user.yml
+  715  ansible-playbook 2user.yml --syntax-check
+  716  ansible-playbook users.yml --syntax-check
+  717  diff 2user.yml users.yml 
+  718  vi 2user.yml 
+  719  ansible-playbook 2user.yml --syntax-check
+  720  vi 2user.yml 
+  721  ansible-playbook 2user.yml --syntax-check
+  722  vi 2user.yml 
+  723  ansible-playbook 2user.yml --syntax-check
+  724  clear
+  725  ansible-playbook 2user.yml --syntax-check
+  726  ansible-playbook 2user.yml --check
+  727  ansible-playbook 2user.yml --private-key=aleti.pem
+  728  ansible-playbook 2user.yml --private-key=aleti.pem -i inventory --check
+  729  cat inventory 
+  730  ansible-playbook 2user.yml --private-key=aleti.pem -i inventory
+  731  cat /etc/passwd
+  732  clear
+  733  vi 2user.yml 
+  734  ansible-playbook 2user.yml --private-key=aleti.pem -i inventory
+  735  cat /etc/passwd
+  736  clear
+  737  vi 2user.yml 
+  738  ansible-playbook 2user.yml --private-key=aleti.pem -i inventory
+  739  ansible-playbook 2user.yml --private-key=aleti.pem -i inventory --extra-vars "passw=vijaya@123"
+  740  ansible-playbook 2user.yml --private-key=aleti.pem -i inventory --extra-vars "passw=vijaya@123 var2=value2 var3=value3"
+  741  ansible-playbook 2user.yml --private-key=aleti.pem -i inventory -e passw=vijaya@123
+  742  clear
+  743  vi 2user.yml 
+  744  vi handler2.yml
+  745  ansible-playbook 2user.yml --private-key=aleti.pem -i inventory -e passw=vijaya@123 -vvv
+  746  ansible -m setup -a "filter=family" -i inventory --private-key=aleti.pem
+  747  ansible all -m setup -a "filter=family" -i inventory --private-key=aleti.pem
+  748  ansible all -m setup -a "filter=ansible_os_family" -i inventory --private-key=aleti.pem
+  749  ls
+  750  vi handler2.yml 
+  751  ansible-playbook handler2.yml --syntax-check
+  752  ansible-playbook handler2.yml -i inventory --private-key=aleti.pem 
+  753  vi handler2.yml 
+  754  ansible-playbook handler2.yml -i inventory --private-key=aleti.pem 
+  755  vi handler2.yml 
+  756  ansible-playbook handler2.yml -i inventory --private-key=aleti.pem 
+  757  vi handler2.yml 
+  758  ansible-playbook handler2.yml -i inventory --private-key=aleti.pem 
+  759  vi handler2.yml 
+  760  vi register_var.yml
+  761  ansible-playbook register_var.yml --syntax-check
+  762  vi register_var.yml 
+  763  printenv
+  764  ansible-playbook register_var.yml --syntax-check
+  765  cat register_var.yml 
+  766  vi register_var.yml 
+  767  ansible-playbook register_var.yml --syntax-check
+  768  vi register_var.yml 
+  769  ansible-playbook register_var.yml --syntax-check
+  770  ansible-playbook register_var.yml -i inventory --private-key --check
+  771  ansible-playbook register_var.yml -i inventory --private-key=aleti.pem --check
+  772  vi register_var.yml 
+  773  ansible-playbook register_var.yml -i inventory --private-key=aleti.pem
+  774  cp register_var.yml 2regis.yml
+  775  vi 2regis.yml 
+  776  ansible-playbook register_var.yml --syntax-check
+  777  ansible-playbook 2regis.yml -i inventory --private-key=aleti.pem 
+  778  clear
+  779  ls
+  780  cat /etc/passwd
+  781  passwd vijaya
+  782  clear
+  783  ls
+  784  vi loop1.yml
+  785  vi 2loop.yml
+  786  elinks
+  787  elinks google.com
+  788  clear
+  789  ls
+  790  cat loop1.yml
+  791  vi loop1.yml 
+  792  treee
+  793  tree
+  794  vi loop1.yml 
+  795  ansible-playbook loop1.yml -i inventory --private-key=aleti.pem 
+  796  git
+  797  tree
+  798  telnet
+  799  elinks google.com
+  800  vi 2loop.yml
+  801  ansible-playbook 2loop.yml --syntax-check
+  802  vi 2loop.yml 
+  803  ansible-playbook 2loop.yml --syntax-check
+  804  vi 2loop.yml 
+  805  ansible-playbook 2loop.yml --syntax-check
+  806  vi 2loop.yml 
+  807  ansible-playbook 2loop.yml --syntax-check
+  808  ansible-playbook 2loop.yml -i inventory --private-key=aleti.pem 
+  809  git
+  810  tree
+  811  telnet
+  812  elinks google.com
+  813  clear
+  814  ls
+  815  cat loop2.yml 
+  816  vi file_loop.yml
+  817  ls
+  818  ansible-playbook file_loop.yml --syntax-check
+  819  ansible-playbook file_loop.yml -i inventory --private-key=aleti.pem 
+  820  ls
+  821  vi file_loop.yml 
+  822  ansible-playbook file_loop.yml -i inventory --private-key=aleti.pem 
+  823  ls
+  824  vi file_module.yml
+  825  ansible-playbook file_module.yml --syntax-check
+  826  ansible-playbook file_module.yml -i inventory --private-key=aleti.pem 
+  827  ls
+  828  vi file_module.yml 
+  829  ansible-playbook file_module.yml --syntax-check
+  830  ansible-playbook file_module.yml -i inventory --private-key=aleti.pem 
+  831  cat file_module.yml 
+  832  ls
+  833  vi tags_tutorial.yml
+  834  cat tags_tutorial.yml 
+  835  ansible-playbook tags_tutorial.yml --syntax-check
+  836  ansible-playbook tags_tutorial.yml -i inventory --private-key=aleti.pem 
+  837  service nginx status
+  838  clear
+  839  ansible-playbook tags_tutorial.yml -i inventory --private-key=aleti.pem --tags start
+  840  service nginx status
+  841  ansible-playbook tags_tutorial.yml -i inventory --private-key=aleti.pem --tags stop
+  842  service nginx status
+  843  clear
+  844  ansible-playbook tags_tutorial.yml -i inventory --private-key=aleti.pem --tags install,start
+  845  service nginx status
+  846  clear
+  847  ansible-playbook tags_tutorial.yml -i inventory --private-key=aleti.pem --skip-tags start
+  848  service nginx status
+  849  ansible-playbook tags_tutorial.yml -i inventory --private-key=aleti.pem --skip-tags start,stop
+  850  ls -l
+  851  clear
+  852  mkdir valut
+  853  mv valut vault
+  854  ls
+  855  cd vault
+  856  ls
+  857  clear
+  858  ls
+  859  ls -l
+  860  ansible-vault create file1.yml
+  861  cat file1.yml 
+  862  ansible-vault view file1.yml 
+  863  cat file1.yml 
+  864  ansible-vault decrypt file1.yml 
+  865  cat file1.yml 
+  866  vi valut_password
+  867  ansible-vault encrypt file1.yml 
+  868  cat file1.yml 
+  869  ansible-vault encrypt file1.yml --vault-id valut_password 
+  870  cat valut_password 
+  871  ls
+  872  cat file1.yml 
+  873  ansible-vault edit file1.yml --vault-id valut_password 
+  874  ansible-playbook file1.yml --syntax-check
+  875  ansible-playbook file1.yml --syntax-check --vault-id valut_password 
+  876  ansible-playbook file1.yml -i ../inventory --vault-id @promt --private-key=../aleti.pem 
+  877  ansible-playbook file1.yml -i ../inventory --vault-id @prompt --private-key=../aleti.pem 
+  878  ls
+  879  ansible-vault 
+  880  ansible-vault --help
+  881  ls
+  882  cat file1.yml 
+  883  cat valut_password 
+  884  ansible-vault rekey file1.yml
+  885  ansible-playbook file1.yml --syntax-check --vault-id valut_password 
+  886  ansible-vault view file1.yml --vault-id valut_password 
+  887  vi valut_password 
+  888  ansible-vault view file1.yml --vault-id valut_password 
+  889  ansible-vault rekey file1.yml --vault-id valut_password 
+  890  ansible-vault view file1.yml --vault-id valut_password 
+  891  ansible-playbook file1.yml -i ../inventory --vault-id @prompt --private-key=../aleti.pem 
+  892  ansible-playbook file1.yml -i ../inventory --vault-id @prompt --private-key=/home/ubuntu/aleti.pem 
+  893  cat file1.yml 
+  894  ansible-vault decrypt file1.yml --vault-id valut_password 
+  895  cat file1.yml 
+  896  cd ..
+  897  ls
+  898  vi .gitignore 
+  899  git
+  900  git remote
+  901  git add .
+  902  git commit -m "pushing files"
+  903  git remote list
+  904  git push ansible master
+  905  git push ansible master -f
+  906  history | cat > command_history

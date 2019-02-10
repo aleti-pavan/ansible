@@ -1,0 +1,15 @@
+---
+- hosts: all
+  remote_user: ubuntu
+  become: yes
+  tasks:
+       - name: install softwares on system
+         apt:
+              name: "{{ item }}"
+              state: present
+         with_items:
+            - git
+            - tree
+            - elinks
+            - telnet
+

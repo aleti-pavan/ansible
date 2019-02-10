@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: list with ls command
+      command: uptime 
+      register: output
+    - name: display
+      debug:
+         var: output 

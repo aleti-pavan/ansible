@@ -1,0 +1,32 @@
+---
+- hosts: all
+  remote_user: ubuntu
+  become: yes
+  #become_method: sudo     # This section applicable to whole play
+  tasks: 
+    - name: Install Nginx
+      apt: pkg=nginx state=latest update_cache=true
+      remote_user: ubuntu
+      become: yes
+      #become_method: su   #This is applicable to this particular task
+      notify: restart nginx
+    - name: copy html file
+      command: rm /usr/share/nginx/www/index.html
+       
+    - name: static files
+      command: rm /etc/nginx/sites-available/static_site.cfg
+      become: yes
+    - name: create symlink
+      file:
+        src: /etc/nginx/sites-available/static_site.cfg
+        dest: /etc/nginx/sites-enabled/default
+        state: link
+    
+    - name: nginx config file
+      template: rm /etc/nginx/nginx.conf
+
+
+  handlers:
+    - name: restart nginx
+      service: name=nginx state=stopped
+
