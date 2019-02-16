@@ -1,0 +1,24 @@
+---
+- hosts: all
+  tasks:
+      - name: pavan user
+        user:
+             name: pavan
+             state: present
+             update_password: on_create
+             password: "pavan122"
+        become: true
+      - name: srini user
+        user:
+             name: srini
+             state: present
+             update_password: on_create
+             password: "pavan122"
+        become: true
+      - name: dilip user
+        user:
+             name: dilip
+             state: present
+             update_password: on_create
+             password: "pavan122"
+        become: true

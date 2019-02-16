@@ -1,0 +1,5 @@
+#localhost ansible_ssh_private_key_file=/home/ubuntu/pavan-test.pem
+[web]
+localhost ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/pavan-test.pem
+[db]
+34.247.159.224 ansible_user=ec2-user ansible_ssh_private_key_file=/home/ubuntu/al-aleti-west1.pem

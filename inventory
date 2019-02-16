@@ -1,5 +1,0 @@
-[web]
-localhost ansible_user=ubuntu
-[db]
-35.178.197.137 ansible_user=ubuntu
-

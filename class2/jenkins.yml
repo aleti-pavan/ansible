@@ -1,0 +1,12 @@
+---
+- hosts: web
+  tasks:
+      - name: install elinks
+        apt: 
+            name: elinks 
+            state: latest
+        become: yes
+      - name: restart elinks
+        service:
+            name: elinks
+            state: started

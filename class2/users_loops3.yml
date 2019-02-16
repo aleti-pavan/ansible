@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+      - name: pavan user
+        user:
+             name: "{{ item.name }}"
+             state: "{{ item.state }}"
+             update_password: on_create
+             password: "{{ item.password }}"
+        become: true
+        with_items:
+                - { name: 'pavan', password: 'pavan122', state: 'present' }
+                - { name: 'srini', password: 'srini122', state: 'absent' }
+                - { name: 'dilip', password: 'dilip122', state: 'absent' }
