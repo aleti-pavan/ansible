@@ -1,0 +1,15 @@
+---
+- hosts: web
+  tasks:
+      - name: install elinks
+        apt: 
+            name: "{{ item }}" 
+            state: latest
+        become: yes
+        loop:
+                - git
+                - elinks
+                - tree
+                - tree
+                - strace
+

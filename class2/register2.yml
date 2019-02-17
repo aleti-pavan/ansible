@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+          - name: pwd of the directory
+            shell: pwd
+            register: work_dir
+          - name: print output
+            debug:
+                msg: "{{ work_dir }}"
+

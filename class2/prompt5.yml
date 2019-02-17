@@ -1,0 +1,21 @@
+---
+- hosts: all
+  vars_prompt:
+       - name : Name
+         prompt: " Enter a Name"
+         default: "pavan"
+         private: no
+         encrypt: "sha512_crypt"
+       - name: Age
+         promt: "Enter Age"
+         default: 32
+         private: no
+         confirm: yes
+  tasks:
+      - name: print name
+        debug:
+              msg: " Name is {{ Name }}"
+
+      - name: print age
+        debug:
+              msg: "{{ Age }}"

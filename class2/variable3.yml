@@ -1,0 +1,12 @@
+---
+- hosts: all
+  vars:
+     Tree:
+        name: 'banion'
+        braches: 'many'
+        size: 'big'
+  tasks:
+      - name: print Tree
+        debug:
+            msg: " Name: {{ item.key }} Value: {{ item.value }}"
+        with_dict: "{{ Tree }}"

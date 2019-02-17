@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+          - name: pwd of the directory
+            shell: ls
+            register: ls_out
+          - name: print output
+            debug:
+                msg: "{{ ls_out }}"
+

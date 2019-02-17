@@ -1,0 +1,24 @@
+---
+- hosts: web
+  become: yes
+  tasks:
+       - name: install apache
+         apt:
+             name: apache2
+             state: latest
+         tags: install
+       - name: start apache
+         service: 
+             name: apache2
+             state: started
+         tags: start
+       - name: stop apache
+         service:
+             name: apache2
+             state: stopped
+         tags: stop
+       - name: for the sake
+         debug:
+                 msg: "for the sake"
+         tags: install
+

@@ -1,0 +1,9 @@
+---
+- hosts: web
+  tasks:
+          - name: printenv
+            shell: l /home/ubuntu/ansible/class2 
+            register: out
+            until: out is succeeded
+            retries: 10
+            delay: 2

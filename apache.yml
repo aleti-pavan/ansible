@@ -6,7 +6,7 @@
   gather_facts: no
   tasks:
       - name: installing apache
-        apt: name=apache2 update_cache=yes state=latest
+        apt: name=apache2 update_cache=yes state=absent
        # notify: restart the service
       - name: copying index.html
         copy: 

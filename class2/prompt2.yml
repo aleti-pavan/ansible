@@ -1,0 +1,17 @@
+---
+- hosts: all
+  vars_prompt:
+       - name : Name
+         prompt: " Enter a Name"
+         default: "pavan"
+       - name: Age
+         promt: "Enter Age"
+         default: 32
+  tasks:
+      - name: print name
+        debug:
+              msg: " Name is {{ Name }}"
+
+      - name: print age
+        debug:
+              msg: "{{ Age }}"

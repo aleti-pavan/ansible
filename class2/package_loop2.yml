@@ -1,0 +1,17 @@
+---
+- hosts: web
+  vars:
+     packages:
+             - git
+             - elinks
+             - tree
+             - strace
+             - tree
+  tasks:
+      - name: install elinks
+        apt: 
+            name: "{{ packages }}" 
+            state: latest
+        become: yes
+        #loop: "{{ packages }}"
+
